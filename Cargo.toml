@@ -1,0 +1,67 @@
+[package]
+name = "apex-mm-bot"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# apex
+apex-primitives = { git = "ssh://git@github.com/tradeonapex/apex-primitives" }
+
+# solana
+solana-sdk = "2.2.2"
+solana-client = "2.2.19"
+
+spl-token = { version = "7.0.0", features = ["no-entrypoint"] }
+spl-token-2022 = { version = "7.0.0", features = ["no-entrypoint"] }
+spl-associated-token-account = { version = "7.0.0", features = [
+    "no-entrypoint",
+] }
+spl-token-client = "0.16.0"
+
+solana-program = "2.2.0"
+anchor-client = "0.31.1"
+
+# dex & service
+jito-sdk-rust = "0.3.2"
+anchor-lang = "=0.31.1"
+
+# async
+tokio = { version = "1.21.2", features = ["full"] }
+tokio-tungstenite = { version = "0.23.1", features = ["native-tls"] }
+tokio-stream = "0.1.11"
+tokio-js-set-interval = "1.3.0"
+async-nats = "0.38.0"
+futures-util = "0.3.30"
+futures = "0.3"
+
+# serialization
+serde = "1.0.145"
+serde_json = "1.0.86"
+borsh = { version = "1.5.3" }
+borsh-derive = "1.5.3"
+bincode = "1.3.3"
+bytemuck = "1.21.0"
+
+# networking & http
+reqwest = { version = "0.11.27", features = ["json", "socks", "native-tls"] }
+url = "2.3.1"
+
+# encoding
+base64 = "0.21.0"
+bs64 = "0.1.2"
+bs58 = "0.4"
+
+# utilities
+anyhow = "1.0.62"
+clap = { version = "4.5.7", features = ["derive"] }
+indicatif = "0.17.8"
+rand = "0.8.5"
+colored = "3.0.0"
+maplit = "1.0.2"
+lazy_static = "1.5.0"
+dotenvy = "0.15"
+time = { version = "0.3", features = ["formatting", "macros"] }
+
+# logging & tracing
+tracing = "0.1.40"
+tracing-subscriber = "0.3"
