@@ -1,12 +1,9 @@
 [package]
-name = "apex-mm-bot"
+name = "solana bubblemaps bypassing tool"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-# apex
-apex-primitives = { git = "ssh://git@github.com/tradeonapex/apex-primitives" }
-
 # solana
 solana-sdk = "2.2.2"
 solana-client = "2.2.19"
@@ -19,11 +16,6 @@ spl-associated-token-account = { version = "7.0.0", features = [
 spl-token-client = "0.16.0"
 
 solana-program = "2.2.0"
-anchor-client = "0.31.1"
-
-# dex & service
-jito-sdk-rust = "0.3.2"
-anchor-lang = "=0.31.1"
 
 # async
 tokio = { version = "1.21.2", features = ["full"] }
@@ -61,7 +53,3 @@ maplit = "1.0.2"
 lazy_static = "1.5.0"
 dotenvy = "0.15"
 time = { version = "0.3", features = ["formatting", "macros"] }
-
-# logging & tracing
-tracing = "0.1.40"
-tracing-subscriber = "0.3"

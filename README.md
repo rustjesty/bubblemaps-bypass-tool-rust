@@ -39,7 +39,7 @@ A sophisticated Rust-based tool designed to obfuscate wallet funding sources and
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
+   git clone /bubblemaps-bypass-tool-rust
    cd bubblemaps-bypass-tool-rust
    ```
 
