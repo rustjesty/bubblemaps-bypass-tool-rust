@@ -108,7 +108,7 @@ Contributions are welcome! Please ensure:
 
 For technical support, feature requests, or general inquiries:
 
-**Telegram**: [@soljesty](https://t.me/soljesty)
+**Telegram**: [@soljesty](https://t.me/rustjesty)
 
 ---
 
