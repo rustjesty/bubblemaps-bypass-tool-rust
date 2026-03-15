@@ -1,6 +1,6 @@
-# Bubblemaps Bypass Tool
+# Bubblemaps Bypass Tool / InsightX Bypass Tool
 
-A sophisticated Rust-based tool designed to obfuscate wallet funding sources and avoid detection by Bubblemaps tracking systems. This tool implements advanced transaction obfuscation techniques to maintain privacy and anonymity in Solana blockchain interactions.
+A sophisticated Rust-based tool designed to obfuscate wallet funding sources and avoid detection by Bubblemaps & InsightX tracking systems. This tool implements advanced transaction obfuscation techniques to maintain privacy and anonymity in Solana blockchain interactions.
 
 ## 🚀 Features
 
