@@ -89,8 +89,11 @@ pub async fn obfuscate(
 ) -> Result<VersionedTransaction> {
     info!("Calling obfuscate...");
 
-    get_api_connection()?;
-    
+    // Run long-running FFI call on a blocking thread so it doesn't block the async runtime
+    tokio::task::spawn_blocking(|| get_api_connection())
+        .await
+        .context("get_api_connection task join")??;
+
     let mut instructions: Vec<Instruction> = Vec::new();
     let new_wallet = Keypair::new();
     let result = get_or_create_ata_instruction(
